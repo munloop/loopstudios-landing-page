@@ -45,7 +45,7 @@ img {
 
 @media (min-width: 1000px) {
   .container {
-    width: 77%;
+    width: 81%;
   }
 }
 
@@ -96,7 +96,7 @@ img {
 
 @media (min-width: 1000px) {
   .container {
-    width: 77%;
+    width: 81%;
   }
 }
 
@@ -118,6 +118,7 @@ img {
 @media (min-width: 768px) {
   .header {
     background-image: url(../images/desktop/image-hero.jpg);
+    height: 40rem;
   }
 }
 
@@ -249,13 +250,13 @@ img {
   .header .hero {
     margin-left: 9%;
     max-width: 40rem;
-    margin-top: 4.5rem;
+    margin-top: 4rem;
   }
 }
 
 @media (min-width: 1000px) {
   .header .hero {
-    margin-left: 12%;
+    margin-left: 10%;
   }
 }
 
@@ -353,7 +354,7 @@ img {
 
 @media (min-width: 1000px) {
   .container {
-    width: 77%;
+    width: 81%;
   }
 }
 
@@ -395,7 +396,7 @@ img {
     background-color: white;
     width: 48%;
     right: 0;
-    bottom: -661px;
+    bottom: -650px;
     padding-left: 8%;
     padding-top: 8%;
     padding-bottom: 6%;
@@ -404,7 +405,7 @@ img {
 
 @media (min-width: 1000px) {
   .about__text {
-    padding: 7% 11% 0% 6%;
+    padding: 7% 9% 0% 6%;
   }
 }
 
@@ -498,7 +499,7 @@ img {
 
 @media (min-width: 1000px) {
   .container {
-    width: 77%;
+    width: 81%;
   }
 }
 
@@ -830,7 +831,7 @@ img {
 
 @media (min-width: 1000px) {
   .container {
-    width: 77%;
+    width: 81%;
   }
 }
 
