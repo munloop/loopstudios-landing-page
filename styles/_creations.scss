@@ -1,0 +1,223 @@
+@import "global";
+
+.creations {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-row-gap: 1.5rem;
+  grid-template-areas:
+    "title"
+    "img"
+    "img"
+    "img"
+    "img"
+    "img"
+    "img"
+    "img"
+    "img"
+    "btn";
+  text-align: center;
+  justify-content: center;
+
+  @media (min-width: 700px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr repeat(4, 3fr);
+    gap: 1.5rem 1.5rem;
+    grid-template-areas:
+      "title btn"
+      "img ."
+      "img .";
+  }
+
+  @media (min-width: 1100px) {
+    grid-template-columns: repeat(4, 15.938rem);
+    grid-template-rows: 1fr repeat(2, 3fr);
+    grid-template-areas:
+      "title title title btn"
+      "img img img img"
+      "img img img img";
+  }
+
+  &-title {
+    grid-area: title;
+    align-self: center;
+
+    @media (min-width: 700px) {
+      grid-area: title;
+      justify-self: center;
+    }
+    @media (min-width: 1000px) {
+      grid-area: title;
+      justify-self: self-start;
+    }
+
+    h2 {
+      display: grid;
+      grid-area: title;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 2rem;
+      font-family: $josefin;
+      font-weight: 300;
+
+      @media (min-width: 1000px) {
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  &__button {
+    grid-area: btn;
+    align-self: center;
+    display: grid;
+
+    @media (min-width: 700px) {
+      grid-area: btn;
+    }
+
+    @media (min-width: 1000px) {
+      justify-self: self-end;
+    }
+
+    button {
+      cursor: pointer;
+      outline: none;
+      border: 1px solid $Black;
+      text-transform: uppercase;
+      color: $Black;
+      background-color: $White;
+      font-size: 0.875rem;
+      font-weight: 600;
+      letter-spacing: 0.313rem;
+      font-family: $alata;
+      margin: 0.625rem auto;
+      padding: 0.813rem 2.375rem;
+      transition: all 400ms ease-in-out;
+
+      &:hover {
+        background-color: $Black;
+        color: $White;
+      }
+    }
+  }
+
+  &__item {
+    height: 8rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: inset 6.25rem 0 4.688rem 0.313rem rgba(0, 0, 0, 0.5);
+    transition: box-shadow 200ms ease-in-out;
+
+    &:hover {
+      box-shadow: inset 0 0 30rem 0 $Dark-Gray;
+
+      .creations__title {
+        color: $Black;
+      }
+    }
+
+    @media (min-width: 700px) {
+      height: 28.125rem;
+      width: 16rem;
+      margin: auto;
+      background-size: contain;
+      background-position: top;
+      box-shadow: inset 0 -14.063rem 18.75rem -7.188rem rgb(0, 0, 0);
+    }
+  }
+
+  &__img {
+    grid-area: img;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+  }
+
+  &__title {
+    max-width: 15rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-family: $josefin;
+    text-transform: uppercase;
+    text-align: left;
+    color: $White;
+    position: relative;
+    display: flex;
+    margin: 3.438rem 1.5rem;
+    line-height: 1;
+
+    @media (min-width: 700px) {
+      margin-top: 21.5rem;
+      margin-left: 2rem;
+      font-size: 2rem;
+      letter-spacing: 1.5px;
+    }
+  }
+}
+
+// images
+#item1 {
+  background-image: url("../images/mobile/image-deep-earth.jpg");
+
+  @media (min-width: 700px) {
+    background-image: url("../images/desktop/image-deep-earth.jpg");
+  }
+}
+
+#item2 {
+  background-image: url("../images/mobile/image-night-arcade.jpg");
+
+  @media (min-width: 700px) {
+    background-image: url("../images/desktop/image-night-arcade.jpg");
+  }
+}
+
+#item3 {
+  background-image: url("../images/mobile/image-soccer-team.jpg");
+
+  @media (min-width: 700px) {
+    background-image: url("../images/desktop/image-soccer-team.jpg");
+  }
+}
+
+#item4 {
+  background-image: url("../images/mobile/image-grid.jpg");
+
+  @media (min-width: 700px) {
+    background-image: url("../images/desktop/image-grid.jpg");
+  }
+}
+
+#item5 {
+  background-image: url("../images/mobile/image-from-above.jpg");
+
+  @media (min-width: 700px) {
+    background-image: url("../images/desktop/image-from-above.jpg");
+  }
+}
+
+#item6 {
+  background-image: url("../images/mobile/image-pocket-borealis.jpg");
+
+  @media (min-width: 700px) {
+    background-image: url("../images/desktop/image-pocket-borealis.jpg");
+  }
+}
+
+#item7 {
+  background-image: url("../images/mobile/image-curiosity.jpg");
+
+  @media (min-width: 700px) {
+    background-image: url("../images/desktop/image-curiosity.jpg");
+  }
+}
+
+#item8 {
+  background-image: url("../images/mobile/image-fisheye.jpg");
+
+  @media (min-width: 700px) {
+    background-image: url("../images/desktop/image-fisheye.jpg");
+  }
+}
